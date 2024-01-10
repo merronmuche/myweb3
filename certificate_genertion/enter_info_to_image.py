@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Load the certificate image
-image_path = '/home/meron/Documents/work/tenacademy/week5/myweb3/data/img-3og9vBnaddkX8UWcRvS4HzU2.png'
+image_path = '//home/meron/Documents/work/tenacademy/week5/myweb3/data/generated.png'
 certificate = cv2.imread(image_path)
 
 # Load the logo image 
@@ -14,12 +14,14 @@ if certificate is None or logo is None:
     raise ValueError("Could not open or find the image or the logo.")
 
 # Define the text to be added
-name = "Meron Amsalu"
-course_title = "Data Engineering"
+name = "Full Name: Meron Amsalu"
+course_title = "Title: Data Engineering"
+date = "10/01/2024Gc"
 
 # Define the position for the text 
 name_position = (350, 550)  
 course_position = (350, 600)  
+date_position = (450,720)
 
 # Define the position for the logo 
 logo_position = (200, 100)  
@@ -62,6 +64,8 @@ line_type = 2
 # Add the text to the certificate
 cv2.putText(certificate, name, name_position, font, font_scale, font_color, line_type)
 cv2.putText(certificate, course_title, course_position, font, font_scale, font_color, line_type)
+cv2.putText(certificate, date, date_position, font, font_scale, font_color, line_type)
+
 
 # Save the resulting image
 output_path = 'certificate_with_name_course_logo.png'
