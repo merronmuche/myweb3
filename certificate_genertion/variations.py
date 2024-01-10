@@ -2,14 +2,14 @@
 import os
 
 
-os.environ['OPENAI_API_KEY']='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'
+os.environ['OPENAI_API_KEY']='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'
 
 
 from openai import OpenAI
 client = OpenAI()
 
 response = client.images.create_variation(
-  image=open("certificate_genertion/img-212PI67iNtBnCoNeVhn8IjAR.png", "rb"),
+  image=open("/home/meron/Documents/work/tenacademy/week5/myweb3/outpu_image/final_certificate.png", "rb"),
   n=2,
   size="1024x1024"
 )
