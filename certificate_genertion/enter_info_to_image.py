@@ -2,11 +2,11 @@ import cv2
 import numpy as np
 
 # Load the certificate image
-image_path = '/home/meron/Documents/work/tenacademy/week5/myweb3/certificate_genertion/img-3og9vBnaddkX8UWcRvS4HzU2.png'
+image_path = '/home/meron/Documents/work/tenacademy/week5/myweb3/data/img-3og9vBnaddkX8UWcRvS4HzU2.png'
 certificate = cv2.imread(image_path)
 
 # Load the logo image 
-logo_path = '/home/meron/Documents/work/tenacademy/week5/myweb3/certificate_genertion/10academy_logo.png'
+logo_path = '/home/meron/Documents/work/tenacademy/week5/myweb3/data/10academy_logo.png'
 logo = cv2.imread(logo_path)
 
 # Check if the images are loaded correctly
