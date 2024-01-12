@@ -1,25 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import WalletConnect from './WalletConnect'; // Adjust the path if necessary
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is my first web application
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* Other components or content */}
+        <WalletConnect />
       </header>
     </div>
   );
 }
 
 export default App;
+
+sas
